@@ -1,0 +1,52 @@
+{
+    "id": "butter-tarts",
+    "name": "Classic Mini Butter Tarts",
+    "category": "cookies-tarts",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "servings": "30 tarts",
+    "ingredients": [
+        {
+            "item": "Mini Tart Shells",
+            "amount": "30"
+        },
+        {
+            "item": "Butter, softened",
+            "amount": "½ cup"
+        },
+        {
+            "item": "Brown sugar",
+            "amount": "¾ cup"
+        },
+        {
+            "item": "Corn syrup",
+            "amount": "½ cup"
+        },
+        {
+            "item": "Eggs",
+            "amount": "2"
+        },
+        {
+            "item": "Vanilla",
+            "amount": "1 tsp"
+        },
+        {
+            "item": "Salt",
+            "amount": "pinch"
+        },
+        {
+            "item": "Pecans, chopped",
+            "amount": "Optional"
+        }
+    ],
+    "directions": [
+        "Preheat oven to 400°F.",
+        "Place the mini tart shells in a mini cupcake tray (usually these trays only hold 24, so I put the last 6 in a regular cupcake tray and it works well).",
+        "Mix butter, brown sugar, corn syrup and salt in a large bowl.",
+        "Whisk in eggs and vanilla; the batter will be very liquid.",
+        "Pour carefully into tart shells. Sprinkle on chopped pecans if using.",
+        "Bake for 20 minutes. They will puff up a lot in the oven, don`t worry, they will sink back after they come out of the oven and cool down.",
+        "Let them cool for at least 10 minutes and enjoy!"
+    ],
+    "notes": "The optional pecans can be placed at the bottom of the tart shell before pouring in the filling."
+}
