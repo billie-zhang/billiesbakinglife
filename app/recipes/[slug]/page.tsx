@@ -13,13 +13,10 @@ export default function RecipePage({ params }: { params: any }) {
     const [multiplier, setMultiplier] = useState(1);
     const [isLoading, setIsLoading] = useState(true);
 
-    // 1. Handling the "Promise" and Data Fetching in Client Mode
     useEffect(() => {
         async function loadRecipe() {
             const resolvedParams = await params;
             try {
-                // In client-side, we fetch from an API route or a dynamic import
-                // For now, we'll use a dynamic import assumption
                 const data = await import(`@/data/recipes/${resolvedParams.slug}.json`);
                 setRecipe(data.default);
             } catch (e) {
@@ -126,14 +123,14 @@ export default function RecipePage({ params }: { params: any }) {
             </main>
 
             {/* FIXED FOOTER BUTTON */}
-            <footer className="max-w-7xl mx-auto px-8 mt-40 pt-10 border-t border-black/[0.03] text-center">
+            {/* <footer className="max-w-7xl mx-auto px-8 mt-40 pt-10 border-t border-black/[0.03] text-center">
                 <button
                     onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
                     className="text-[10px] uppercase tracking-[0.4em] font-bold text-black/20 hover:text-black transition-all cursor-pointer"
                 >
                     Back to top
                 </button>
-            </footer>
+            </footer> */}
         </div>
     );
 }

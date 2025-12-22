@@ -20,19 +20,6 @@ export default async function Home() {
   return (
     <div className="min-h-screen bg-[#FAFAF8] text-slate-800 selection:bg-rose-100 antialiased">
 
-      <nav className="fixed top-0 w-full z-50 bg-[#FAFAF8]/80 backdrop-blur-xl border-b border-black/[0.03]">
-        <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-          <Link href="/" className="text-2xl font-serif italic tracking-tighter">
-            billie's baking life
-          </Link>
-          <div className="flex gap-10 text-[11px] uppercase tracking-[0.2em] font-bold text-slate-500">
-            <Link href="/cookies" className="hover:text-black transition-colors">cookies</Link>
-            <Link href="/cakes" className="hover:text-black transition-colors">cakes</Link>
-            <Link href="/about" className="hover:text-black transition-colors">about</Link>
-          </div>
-        </div>
-      </nav>
-
       <header className="pt-52 pb-32 text-center px-6">
         <h1 className="text-7xl md:text-9xl font-serif leading-[0.85] tracking-tighter text-slate-900 mb-10">
           Pure <br /> <span className="italic opacity-20">simplicity.</span>
@@ -104,12 +91,6 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 6. FOOTER */}
-      <footer className="border-t border-black/[0.03] py-24 text-center">
-        <p className="text-[11px] uppercase tracking-[0.3em] font-bold text-slate-400">
-          © 2025 billie's baking life — baked with love 🩵
-        </p>
-      </footer>
     </div>
   );
 }
