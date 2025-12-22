@@ -1,0 +1,66 @@
+{
+    "id": "brown-butter-earl-grey-cookies",
+    "name": "brown butter earl grey cookies",
+    "category": "cookies",
+    "prepTime": "45 min",
+    "cookTime": "12 min",
+    "servings": "20 cookies",
+    "ingredients": [
+        {
+            "item": "flour",
+            "amount": "1 2/3 cups (200g)"
+        },
+        {
+            "item": "baking soda",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "salt",
+            "amount": "1/4 tsp"
+        },
+        {
+            "item": "unsalted butter",
+            "amount": "1/2 cup (113g)"
+        },
+        {
+            "item": "earl grey tea, ground",
+            "amount": "1 tbsp"
+        },
+        {
+            "item": "brown sugar",
+            "amount": "3/4 cup (150g)"
+        },
+        {
+            "item": "granulated sugar",
+            "amount": "1/4 cup (50g)"
+        },
+        {
+            "item": "egg",
+            "amount": "1"
+        },
+        {
+            "item": "vanilla",
+            "amount": "1 tsp"
+        },
+        {
+            "item": "chocolate chips",
+            "amount": "1/2 cup"
+        }
+    ],
+    "directions": [
+        "preheat oven to 350℉. line a baking sheet with parchment paper.",
+        "in a light coloured saucepan, melt the butter over medium heat, stirring constantly.",
+        "once melted, the butter will foam and sizzle. continue stirring for 5-7 minutes until it turns golden brown and smells nutty.",
+        "add in the ground earl grey and allow the tea to steep in the butter for 30 minutes, stirring occasionally.",
+        "pour into a heatproof bowl and whisk in the brown sugar and granulated sugar.",
+        "add egg and vanilla and mix.",
+        "in a separate bowl, whisk together flour, baking soda, and salt.",
+        "add the dry ingredients and fold until only some flour is visible.",
+        "add chocolate chips and fold until no more flour is visible.",
+        "chill dough for 30-60 mins.",
+        "scoop dough onto the baking sheet and bake for 10-12 minutes.",
+        "allow to cool on the pan for at least 5 minutes before moving.",
+        "enjoy!"
+    ],
+    "notes": "browning the butter and steeping the tea is the secret to the depth of flavor."
+}

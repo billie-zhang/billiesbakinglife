@@ -1,0 +1,65 @@
+{
+    "id": "blueberry-cheesecake-bars",
+    "name": "blueberry cheesecake bars",
+    "category": "tarts",
+    "prepTime": "30 min",
+    "cookTime": "45 min",
+    "servings": "12 bars",
+    "ingredients": [
+        {
+            "item": "graham cracker crumbs",
+            "amount": "2 1/2 cups"
+        },
+        {
+            "item": "salted butter, melted",
+            "amount": "1/2 cup"
+        },
+        {
+            "item": "cream cheese, softened",
+            "amount": "24oz (3 blocks)"
+        },
+        {
+            "item": "granulated sugar",
+            "amount": "1 cup"
+        },
+        {
+            "item": "all-purpose flour",
+            "amount": "3 tbsp"
+        },
+        {
+            "item": "sour cream",
+            "amount": "3/4 cup (180g)"
+        },
+        {
+            "item": "vanilla extract",
+            "amount": "1 tbsp"
+        },
+        {
+            "item": "lemon zest (optional)",
+            "amount": "2 tsp"
+        },
+        {
+            "item": "eggs, room temp",
+            "amount": "3"
+        },
+        {
+            "item": "blueberries",
+            "amount": "1 cup"
+        }
+    ],
+    "directions": [
+        "preheat oven to 325℉. line and grease a 9x13 pan.",
+        "mix graham crumbs and melted butter; press into the bottom of the pan.",
+        "bake crust for 10 minutes until slightly darkened.",
+        "whisk cream cheese, sugar, and flour on low speed until smooth.",
+        "add sour cream, vanilla, and zest; mix until combined.",
+        "add eggs one at a time, mixing gently after each addition.",
+        "pour batter over the crust.",
+        "blend blueberries until smooth and drop spoonfuls over the batter. swirl with a knife.",
+        "bake for 30-35 minutes until the middle is almost set.",
+        "turn off the oven but leave the cheesecake inside with the door closed for 20 minutes.",
+        "open the oven door slightly and let it sit for another 30 minutes.",
+        "refrigerate for at least 2 hours before cutting to prevent cracking."
+    ],
+    "notes": "the slow cooling process is essential for a smooth surface."
+}

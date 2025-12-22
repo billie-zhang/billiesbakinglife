@@ -1,0 +1,68 @@
+{
+    "id": "best-fudgy-brownies",
+    "name": "best fudgy brownies",
+    "category": "bars/brownies",
+    "prepTime": "15 min",
+    "cookTime": "30 min",
+    "servings": "16 brownies",
+    "ingredients": [
+        {
+            "item": "semi sweet chocolate",
+            "amount": "4 ounces (113g)"
+        },
+        {
+            "item": "butter, melted",
+            "amount": "1/2 cup (113g)"
+        },
+        {
+            "item": "oil",
+            "amount": "1/3 cup"
+        },
+        {
+            "item": "brown sugar",
+            "amount": "1 cup"
+        },
+        {
+            "item": "large eggs",
+            "amount": "2"
+        },
+        {
+            "item": "vanilla",
+            "amount": "1 tsp"
+        },
+        {
+            "item": "all purpose flour",
+            "amount": "2/3 cup (80g)"
+        },
+        {
+            "item": "cocoa powder",
+            "amount": "1/3 cup"
+        },
+        {
+            "item": "baking powder",
+            "amount": "1/4 tsp"
+        },
+        {
+            "item": "salt",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "chocolate chips",
+            "amount": "1/2 cup"
+        }
+    ],
+    "directions": [
+        "preheat oven to 350℉. line an 8x8 pan with parchment paper.",
+        "chop the semi sweet chocolate roughly.",
+        "melt the chopped chocolate and butter in a double boiler until smooth.",
+        "remove from heat and let cool to room temperature.",
+        "mix in the oil and sugar.",
+        "add the eggs and vanilla and mix for 1-2 minutes.",
+        "sift in flour, cocoa powder, and salt. fold until just combined; do not overmix.",
+        "fold in the chocolate chips.",
+        "pour into prepared pan.",
+        "bake for 25-30 minutes depending on desired fudginess.",
+        "cool, cut and enjoy!"
+    ],
+    "notes": ""
+}

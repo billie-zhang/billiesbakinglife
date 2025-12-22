@@ -1,0 +1,68 @@
+{
+    "id": "kit-kat-bars",
+    "name": "kit kat bars",
+    "category": "bars/brownies",
+    "prepTime": "20 min",
+    "cookTime": "30 min",
+    "servings": "24 pieces",
+    "ingredients": [
+        {
+            "item": "kit kat bars",
+            "amount": "enough to cover bottom of pan"
+        },
+        {
+            "item": "unsalted butter, melted",
+            "amount": "3/4 cup"
+        },
+        {
+            "item": "granulated sugar",
+            "amount": "1/2 cup"
+        },
+        {
+            "item": "brown sugar",
+            "amount": "2/3 cup"
+        },
+        {
+            "item": "eggs",
+            "amount": "2"
+        },
+        {
+            "item": "vanilla",
+            "amount": "2 tsp"
+        },
+        {
+            "item": "all purpose flour",
+            "amount": "2 cups (240g)"
+        },
+        {
+            "item": "cornstarch",
+            "amount": "2 tsp"
+        },
+        {
+            "item": "baking soda",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "salt",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "kit kat, chopped",
+            "amount": "1/2 cup"
+        }
+    ],
+    "directions": [
+        "preheat the oven to 350℉. line a 9x13 pan with parchment paper.",
+        "chop the kit kat roughly and press into the base of the baking pan.",
+        "in a bowl, mix melted butter, brown sugar, and granulated sugar.",
+        "add eggs and vanilla and mix well.",
+        "in a separate bowl, whisk flour, baking soda, and salt.",
+        "add the dry mixture to the wet and mix until some streaks remain.",
+        "add chopped kit kat and mix until no flour is visible.",
+        "spread the cookie dough evenly over the base.",
+        "top with more kit kat pieces if desired.",
+        "bake for 25-30 minutes until edges are light golden.",
+        "cool completely before cutting."
+    ],
+    "notes": ""
+}

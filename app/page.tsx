@@ -19,16 +19,16 @@ export default async function Home() {
   return (
     <div className="min-h-screen">
 
-      <section className="pt-40 md:pt-52 max-w-7xl mx-auto px-10 mb-40">
+      <section className="pt-40 md:pt-44 max-w-7xl mx-auto px-10 mb-40">
         <div className="flex items-center gap-8 mb-16">
           <h2 className="text-3xl font-serif italic text-[#2D334A] whitespace-nowrap">Latest recipes</h2>
-          <div className="w-full h-[1px] bg-[#E0E7FF]/50" />
+          <div className="w-full h-[1px] bg-[#D1DAFF]/90" />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-24">
           {latest.map((recipe, index) => (
             <Link key={recipe.id} href={`/recipes/${recipe.id}`} className="group block text-center">
-              <div className={`relative aspect-[4/5] overflow-hidden rounded-[3rem] mb-8 transition-all duration-1000 group-hover:-translate-y-2 ${cardColors[index % cardColors.length]}`} />
+              <div className={`relative aspect-[4/5] overflow-hidden rounded-[2rem] mb-8 transition-all duration-1000 group-hover:-translate-y-2 ${cardColors[index % cardColors.length]}`} />
               <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#6366F1]/30 mb-3">{recipe.category}</p>
               <h3 className="text-2xl font-serif text-[#2D334A] group-hover:italic transition-all duration-500">{recipe.name}</h3>
             </Link>
@@ -102,7 +102,7 @@ export default async function Home() {
         </div>
       </section>
 
-          {/* TODO: update this section */}
+      {/* TODO: update this section */}
       <section className="max-w-6xl mx-auto px-10 pb-64">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
           <div className="aspect-[4/5] bg-[#E0E7FF] rounded-[4rem] overflow-hidden">
@@ -110,7 +110,7 @@ export default async function Home() {
             <div className="w-full h-full bg-gradient-to-tr from-[#6366F1]/10 to-transparent" />
           </div>
           <div className="space-y-8">
-            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#6366F1]/40">The Maker</span>
+            <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#6366F1]/40 ">The Maker</span>
             <h2 className="text-4xl md:text-5xl font-serif leading-tight text-[#2D334A]">
               hi, i'm billie! <br /><span className="italic">welcome to my kitchen.</span>
             </h2>

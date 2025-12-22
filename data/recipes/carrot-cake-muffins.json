@@ -1,0 +1,87 @@
+{
+    "id": "carrot-cake-muffins",
+    "name": "carrot cake muffins",
+    "category": "cakes",
+    "prepTime": "20 min",
+    "cookTime": "18 min",
+    "servings": "12 muffins",
+    "ingredients": [
+        {
+            "item": "chopped pecans",
+            "amount": "1/2 cup"
+        },
+        {
+            "item": "brown sugar",
+            "amount": "3/4 cup"
+        },
+        {
+            "item": "granulated sugar",
+            "amount": "1/4 cup"
+        },
+        {
+            "item": "oil",
+            "amount": "1/2 cup + 2 tbsp"
+        },
+        {
+            "item": "large eggs, room temp",
+            "amount": "2"
+        },
+        {
+            "item": "vanilla",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "flour",
+            "amount": "1 1/2 cup (180g)"
+        },
+        {
+            "item": "baking powder",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "baking soda",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "salt",
+            "amount": "1/4 tsp"
+        },
+        {
+            "item": "ground cinnamon",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "ground ginger",
+            "amount": "pinch"
+        },
+        {
+            "item": "ground nutmeg",
+            "amount": "pinch"
+        },
+        {
+            "item": "grated carrots",
+            "amount": "1 1/2 cup"
+        },
+        {
+            "item": "cream cheese, softened",
+            "amount": "4oz (125g)"
+        },
+        {
+            "item": "maple syrup",
+            "amount": "2-3 tbsp"
+        }
+    ],
+    "directions": [
+        "preheat oven to 300°f. toast pecans on a baking sheet for 7-8 minutes.",
+        "turn oven up to 350°f. line a muffin tin with cupcake liners.",
+        "whisk brown sugar, granulated sugar, oil, eggs, and vanilla in a large bowl.",
+        "in another bowl, whisk flour, baking powder, baking soda, salt, and spices.",
+        "fold the dry ingredients into the wet until just combined.",
+        "fold in the grated carrots and toasted pecans.",
+        "pour into muffin tins and bake for 14-18 minutes.",
+        "allow muffins to cool completely.",
+        "for the frosting, cream together cream cheese and maple syrup until smooth.",
+        "pipe onto cooled muffins and enjoy!"
+    ],
+    "notes": "ensure muffins are cold before frosting to prevent melting."
+}
