@@ -1,7 +1,7 @@
 {
     "id": "butter-tarts",
     "name": "Classic Mini Butter Tarts",
-    "category": "cookies-tarts",
+    "category": "tarts",
     "prepTime": "15 min",
     "cookTime": "20 min",
     "servings": "30 tarts",
@@ -48,5 +48,5 @@
         "Bake for 20 minutes. They will puff up a lot in the oven, don`t worry, they will sink back after they come out of the oven and cool down.",
         "Let them cool for at least 10 minutes and enjoy!"
     ],
-    "notes": "The optional pecans can be placed at the bottom of the tart shell before pouring in the filling."
+    "notes": ""
 }
