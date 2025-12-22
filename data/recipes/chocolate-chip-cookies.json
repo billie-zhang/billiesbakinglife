@@ -1,0 +1,59 @@
+{
+    "id": "chocolate-chip-cookies",
+    "name": "Perfect Chocolate Chip Cookies",
+    "category": "cookies",
+    "prepTime": "15 min",
+    "cookTime": "20 min",
+    "servings": "20 cookies",
+    "ingredients": [
+        {
+            "item": "All purpose flour",
+            "amount": "1 2/3 cups (200g)"
+        },
+        {
+            "item": "Baking soda",
+            "amount": "1/2 tsp"
+        },
+        {
+            "item": "Salt",
+            "amount": "1/4 tsp"
+        },
+        {
+            "item": "Unsalted butter, melted",
+            "amount": "1/2 cup (113g)"
+        },
+        {
+            "item": "Brown sugar",
+            "amount": "¾ cup (150g)"
+        },
+        {
+            "item": "Granulated sugar",
+            "amount": "¼ cup (50g)"
+        },
+        {
+            "item": "Egg, large",
+            "amount": "1"
+        },
+        {
+            "item": "Vanilla extract",
+            "amount": "1 tsp"
+        },
+        {
+            "item": "Chocolate chips",
+            "amount": "1/2 cup"
+        }
+    ],
+    "directions": [
+        "Preheat oven to 375℉. Line a baking sheet with parchment paper.",
+        "In a bowl, add flour, baking soda and salt and mix well.",
+        "In another bowl, whisk melted butter, brown sugar and granulated sugar until well combined.",
+        "Add egg and vanilla and mix.",
+        "Add in the dry ingredients and fold until there is only some flour visible.",
+        "Add chocolate chips and fold until no more flour is visible. Chill for at least an hour.",
+        "Scoop dough onto the baking sheet, about 1.5 tbsp per cookie, spaced about 2 inches apart.",
+        "Bake for 10-12 minutes, or until the edges are golden brown.",
+        "Allow to cool on the pan for at least 5 minutes, it will continue baking.",
+        "Enjoy with a glass of milk!"
+    ],
+    "notes": ""
+}
