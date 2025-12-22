@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
+import Navbar from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,25 +22,15 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} bg-[#F9FAFF] text-[#2D334A] antialiased`}>
+        <Navbar />
 
-        <nav className="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-2xl border-b border-[#E0E7FF]">
-          <div className="max-w-7xl mx-auto px-8 h-20 flex items-center justify-between">
-            <Link href="/" className="text-2xl font-serif italic tracking-tighter hover:opacity-60 transition-opacity">
-              billie's baking life
-            </Link>
-            <div className="flex gap-10 text-[10px] uppercase tracking-[0.3em] font-bold text-[#2D334A]/40">
-              <Link href="/cookies" className="hover:text-[#6366F1] transition-colors">cookies</Link>
-              <Link href="/cakes" className="hover:text-[#6366F1] transition-colors">cakes</Link>
-              <Link href="/about" className="hover:text-[#6366F1] transition-colors">about</Link>
-            </div>
-          </div>
-        </nav>
+        <main className="relative">
+          {children}
+        </main>
 
-        {children}
-
-        <footer className="border-t border-[#E0E7FF] py-16 text-center">
-          <p className="text-[10px] uppercase tracking-[0.4em] font-bold text-[#2D334A]/30">
-            © 2025 billie's baking life — baked with love 🩵
+        <footer className="bg-[#F1F4FF] py-20 text-center">
+          <p className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#2D334A]/40">
+            © 2026 billie's baking life — baked with love 🩵
           </p>
         </footer>
       </body>
