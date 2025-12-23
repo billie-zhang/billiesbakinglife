@@ -2,6 +2,7 @@ import fs from "fs";
 import path from "path";
 import Link from "next/link";
 import Image from 'next/image';
+import SearchSection from "@/components/SearchSection";
 
 const cardColors = ["bg-[#E0E7FF]", "bg-[#F3E8FF]", "bg-[#EBEBFF]"];
 
@@ -131,20 +132,7 @@ export default async function Home() {
         </div>
       </section>
 
-      <section className="bg-[#F1F4FF] py-44 mb-52">
-        <div className="max-w-3xl mx-auto text-center px-6">
-          <h2 className="text-4xl md:text-6xl font-serif leading-tight text-[#2D334A] mb-12">
-            looking for <br /> <span className="italic opacity-30">something specific?</span>
-          </h2>
-          <div className="relative max-w-md mx-auto">
-            <input
-              type="text"
-              placeholder="find your next favorite recipe"
-              className="w-full bg-white rounded-full py-5 px-10 text-[10px] uppercase tracking-[0.2em] focus:ring-8 focus:ring-[#6366F1]/5 shadow-sm outline-none placeholder:text-[#2D334A]/50 focus:placeholder:text-[#2D334A]/30 text-[#2D334A] transition-all duration-200"
-            />
-          </div>
-        </div>
-      </section>
+      <SearchSection recipes={recipes} />
 
       <section className="max-w-7xl mx-auto px-10 mb-60">
         <div className="text-center mb-24">
