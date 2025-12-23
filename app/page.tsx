@@ -55,7 +55,7 @@ export default async function Home() {
                 )}
               </div>
               <div className="text-center px-4">
-                <h3 className="text-[11px] mx-10 uppercase tracking-[0.35em] leading-relaxed text-[#2D334A]/80 transition-all duration-500 group-hover:-translate-y-2">
+                <h3 className="text-[11px] mx-10 uppercase tracking-[0.35em] leading-relaxed text-[#2D334A]/80 transition-all duration-500 group-hover:text-[#2D334A]">
                   {recipe.name}
                 </h3>
               </div>
@@ -73,7 +73,21 @@ export default async function Home() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 h-auto md:h-[580px]">
             <div className="md:col-span-7 h-[380px] md:h-full">
               <Link href={`/recipes/${featured[0]?.id}`} className="group relative block w-full h-full overflow-hidden rounded-[3rem] bg-[#E0E7FF] shadow-sm hover:shadow-xl transition-all duration-700">
-                <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/30 to-transparent z-10" />
+                {featured[0]?.image ? (
+                  <>
+                    <Image
+                      src={featured[0].image}
+                      alt={featured[0].name}
+                      fill
+                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                    />
+                    <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-700 z-10" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/40 to-transparent z-10" />
+                  </>
+                ) : (
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/30 to-transparent z-10" />
+                )}
+
                 <div className="absolute bottom-10 left-10 z-20">
                   <h2 className="text-xs md:text-sm uppercase tracking-[0.3em] font-bold text-white leading-tight">
                     {featured[0]?.name}
@@ -81,10 +95,29 @@ export default async function Home() {
                 </div>
               </Link>
             </div>
+
             <div className="md:col-span-5 flex flex-col gap-8 h-auto md:h-full">
               {featured.slice(1, 3).map((recipe, i) => (
-                <Link key={recipe.id} href={`/recipes/${recipe.id}`} className={`group relative flex-1 min-h-[220px] overflow-hidden rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-700 ${i === 0 ? 'bg-[#F3E8FF]' : 'bg-[#EBEBFF]'}`}>
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/20 to-transparent z-10" />
+                <Link
+                  key={recipe.id}
+                  href={`/recipes/${recipe.id}`}
+                  className={`group relative flex-1 min-h-[220px] overflow-hidden rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-700 ${i === 0 ? 'bg-[#F3E8FF]' : 'bg-[#EBEBFF]'}`}
+                >
+                  {recipe.image ? (
+                    <>
+                      <Image
+                        src={recipe.image}
+                        alt={recipe.name}
+                        fill
+                        className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                      />
+                      <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-700 z-10" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/30 to-transparent z-10" />
+                    </>
+                  ) : (
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/20 to-transparent z-10" />
+                  )}
+
                   <div className="absolute bottom-8 left-8 z-20">
                     <h3 className="text-[10px] md:text-xs uppercase tracking-[0.3em] font-bold text-white transition-all">
                       {recipe.name}
@@ -93,6 +126,7 @@ export default async function Home() {
                 </Link>
               ))}
             </div>
+
           </div>
         </div>
       </section>
@@ -138,7 +172,6 @@ export default async function Home() {
       <section className="max-w-6xl mx-auto px-10 pb-64">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
           <div className="aspect-[4/5] bg-[#E0E7FF] rounded-[3.5rem] overflow-hidden relative shadow-inner">
-            {/* <div className="absolute inset-0 bg-gradient-to-tr from-[#6366F1]/5 to-transparent" /> */}
             <Image
               src="/images/billie-profile.jpg"
               alt="billie"
