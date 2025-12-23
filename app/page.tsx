@@ -11,12 +11,10 @@ export default async function Home() {
   const files = fs.readdirSync(recipesDir);
   const recipes = files.map((file) => JSON.parse(fs.readFileSync(path.join(recipesDir, file), "utf-8")));
 
-  // 1. Sort by Date for "Latest" (Assuming you add a "date": "2024-03-20" to your JSON)
   const latest = [...recipes]
     .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime())
     .slice(0, 3);
 
-  // 2. Explicit Featured Selection
   const featuredIds = ["butter-tarts", "kit-kat-bars", "carrot-cake-muffins"];
   const featured = featuredIds.map(id =>
     recipes.find(r => r.id === id) || recipes[0]
@@ -36,7 +34,7 @@ export default async function Home() {
 
       <section className="pt-40 md:pt-44 max-w-7xl mx-auto px-10 mb-40">
         <div className="flex items-center gap-8 mb-16">
-          <h2 className="text-3xl font-serif italic text-[#2D334A] whitespace-nowrap">Latest recipes</h2>
+          <h2 className="text-3xl font-serif italic text-[#2D334A] whitespace-nowrap">latest recipes</h2>
           <div className="w-full h-[1px] bg-[#D1DAFF]/90" />
         </div>
 
@@ -45,10 +43,10 @@ export default async function Home() {
             <Link key={recipe.id} href={`/recipes/${recipe.id}`} className="group block">
               <div className={`relative aspect-[4/5] overflow-hidden rounded-[2rem] mb-8 transition-all duration-1000 group-hover:-translate-y-2 ${cardColors[index % cardColors.length]}`} />
               <div className="text-center">
-                <p className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#6366F1]/40 mb-2">
+                {/* <p className="text-[9px] uppercase tracking-[0.4em] font-bold text-[#6366F1]/40 mb-2">
                   {recipe.date ? new Date(recipe.date).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }) : 'recently'} — {recipe.category}
-                </p>
-                <h3 className="text-2xl font-serif text-[#2D334A] transition-all duration-500">{recipe.name}</h3>
+                </p> */}
+                <h3 className="text-xs mx-10 uppercase tracking-[0.4em] leading-relaxed text-[#2D334A] transition-all duration-500">{recipe.name}</h3>
               </div>
             </Link>
           ))}
@@ -56,7 +54,7 @@ export default async function Home() {
       </section>
 
       <div className="max-w-7xl mx-auto px-10 mb-16 text-center">
-        <span className="text-[18px] uppercase tracking-[0.75em] text-[#2D334A]/50 font-bold">The Ones Everyone Asks For</span>
+        <span className="text-5xl font-serif italic text-[#2D334A]/50 font-medium">everyone's favorites</span>
       </div>
 
       <section className="px-8 md:px-20 mb-46">
@@ -67,7 +65,7 @@ export default async function Home() {
                 <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/20 to-transparent z-10" />
                 <div className="absolute bottom-12 left-12 z-20">
                   {/* <span className="text-[10px] uppercase tracking-[0.4em] font-bold text-white/60 mb-3 block italic">The signature</span> */}
-                  <h2 className="text-3xl md:text-5xl font-serif text-white leading-tight transition-all">
+                  <h2 className="text-sm md:text-xl uppercase tracking-[0.2em] font-bold text-white leading-tight transition-all">
                     {featured[0]?.name}
                   </h2>
                 </div>
@@ -78,7 +76,7 @@ export default async function Home() {
                 <Link key={recipe.id} href={`/recipes/${recipe.id}`} className={`group relative flex-1 min-h-[250px] overflow-hidden rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-700 ${i === 0 ? 'bg-[#F3E8FF]' : 'bg-[#EBEBFF]'}`}>
                   <div className="absolute inset-0 bg-gradient-to-t from-[#2D334A]/10 to-transparent z-10" />
                   <div className="absolute bottom-10 left-10 z-20">
-                    <h3 className="text-xl md:text-2xl font-serif text-white group-hover:italic transition-all">
+                    <h3 className="text-xs md:text-sm uppercase tracking-[0.2em] font-bold text-white transition-all">
                       {recipe.name}
                     </h3>
                   </div>
@@ -106,7 +104,7 @@ export default async function Home() {
 
       <section className="max-w-7xl mx-auto px-10 mb-52">
         <div className="text-center mb-20">
-          <h2 className="text-[14px] uppercase tracking-[0.6em] font-bold text-[#2D334A]/30">Explore by Category</h2>
+          <h2 className="text-4xl font-serif italic text-[#2D334A]/40">explore by category</h2>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((cat) => (
@@ -118,7 +116,7 @@ export default async function Home() {
               <div className={`h-1/2 w-full ${cat.color} transition-transform duration-700 group-hover:scale-105`} />
 
               <div className="h-1/2 w-full flex flex-col items-center justify-center bg-white relative">
-                <h3 className="text-2xl font-serif text-[#2D334A] transition-all duration-500">
+                <h3 className="text-lg tracking-[0.1em] text-[#2D334A] transition-all duration-500">
                   {cat.name}
                 </h3>
                 <div className="mt-2 h-[1px] w-0 bg-[#6366F1]/30 transition-all duration-500 group-hover:w-8" />

@@ -2,40 +2,41 @@
     "id": "butter-tarts",
     "name": "butter tarts",
     "category": "tarts",
+    "date": "2020-06-20",
     "prepTime": "15 min",
     "cookTime": "20 min",
     "servings": "30 tarts",
     "ingredients": [
         {
-            "item": "Mini Tart Shells",
+            "item": "mini tart shells",
             "amount": "30"
         },
         {
-            "item": "Butter, softened",
-            "amount": "½ cup"
+            "item": "butter, softened",
+            "amount": "1/2 cup"
         },
         {
-            "item": "Brown sugar",
-            "amount": "¾ cup"
+            "item": "brown sugar",
+            "amount": "3/4 cup"
         },
         {
-            "item": "Corn syrup",
-            "amount": "½ cup"
+            "item": "corn syrup",
+            "amount": "1/2 cup"
         },
         {
-            "item": "Eggs",
+            "item": "eggs",
             "amount": "2"
         },
         {
-            "item": "Vanilla",
+            "item": "vanilla",
             "amount": "1 tsp"
         },
         {
-            "item": "Salt",
+            "item": "salt",
             "amount": "pinch"
         },
         {
-            "item": "Pecans, chopped",
+            "item": "pecans, chopped",
             "amount": "optional"
         }
     ],
@@ -48,5 +49,5 @@
         "Bake for 20 minutes. They will puff up a lot in the oven, don`t worry, they will sink back after they come out of the oven and cool down.",
         "Let them cool for at least 10 minutes and enjoy!"
     ],
-    "notes": ""
+    "notes": "don't worry if they puff up significantly during baking; that's part of the process."
 }
