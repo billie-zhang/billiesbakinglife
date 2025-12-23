@@ -1,6 +1,7 @@
 {
-    "id": "kit-kat-bars",
-    "name": "kit kat bars",
+    "id": "kit-kat-cookie-bars",
+    "name": "kit kat cookie bars",
+    "image": "/images/recipes/kit-kat-cookie-bars.jpeg",
     "category": "bars/brownies",
     "date": "2025-05-09",
     "prepTime": "20 min",

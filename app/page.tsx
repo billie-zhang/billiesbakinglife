@@ -1,6 +1,7 @@
 import fs from "fs";
 import path from "path";
 import Link from "next/link";
+import Image from 'next/image';
 
 const cardColors = ["bg-[#E0E7FF]", "bg-[#F3E8FF]", "bg-[#EBEBFF]"];
 
@@ -15,7 +16,7 @@ export default async function Home() {
     .sort((a, b) => new Date(b.date || 0).getTime() - new Date(a.date || 0).getTime())
     .slice(0, 3);
 
-  const featuredIds = ["butter-tarts", "kit-kat-bars", "carrot-cake-muffins"];
+  const featuredIds = ["butter-tarts", "kit-kat-cookie-bars", "carrot-cake-muffins"];
   const featured = featuredIds.map(id =>
     recipes.find(r => r.id === id) || recipes[0]
   );
@@ -41,7 +42,18 @@ export default async function Home() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-x-12 gap-y-16">
           {latest.map((recipe, index) => (
             <Link key={recipe.id} href={`/recipes/${recipe.id}`} className="group block">
-              <div className={`relative aspect-[4/5] overflow-hidden rounded-[2.5rem] mb-6 transition-all duration-700 group-hover:-translate-y-2 ${cardColors[index % cardColors.length]}`} />
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[2.5rem] mb-6 shadow-sm">
+                {recipe.image ? (
+                  <Image
+                    src={recipe.image}
+                    alt={recipe.name}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className={`w-full h-full ${cardColors[index % cardColors.length]}`} />
+                )}
+              </div>
               <div className="text-center px-4">
                 <h3 className="text-[11px] mx-10 uppercase tracking-[0.35em] leading-relaxed text-[#2D334A]/80 transition-all duration-500 group-hover:-translate-y-2">
                   {recipe.name}
@@ -123,11 +135,16 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* 6. ABOUT */}
       <section className="max-w-6xl mx-auto px-10 pb-64">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-24 items-center">
           <div className="aspect-[4/5] bg-[#E0E7FF] rounded-[3.5rem] overflow-hidden relative shadow-inner">
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#6366F1]/5 to-transparent" />
+            {/* <div className="absolute inset-0 bg-gradient-to-tr from-[#6366F1]/5 to-transparent" /> */}
+            <Image
+              src="/images/billie-profile.jpg"
+              alt="billie"
+              fill
+              className="object-cover"
+            />
           </div>
           <div className="space-y-10">
             <span className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#6366F1]/40">the maker</span>
