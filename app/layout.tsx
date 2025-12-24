@@ -30,7 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <footer className="bg-[#F1F4FF] py-20 text-center">
           <p className="text-[10px] uppercase tracking-[0.5em] font-bold text-[#2D334A]/40">
-            © 2026 billie's baking life — baked with love 🩵
+            © {new Date().getFullYear()} billie's baking life — baked with love 🩵
           </p>
         </footer>
       </body>
